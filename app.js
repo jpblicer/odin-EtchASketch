@@ -1,13 +1,15 @@
-const gridSizeButtonElement = document.querySelector(".gridSizeButton");
+const containerElement = document.querySelector("#container");
+const gridSizeButtonElement = document.querySelector("#gridSizeButton");
 
-let squareGridSize = prompt("please choose a grid size between 2 and 100");
+let squareGridSize = prompt("please enter grid size");
+
+gridSizeButtonElement.addEventListener("click", event =>{
+    location.reload()
+})
 
 while(squareGridSize > 100 || squareGridSize < 2){
-   squareGridSize = prompt("Try a value between 2 and 100")
-};
-
-
-const containerElement = document.querySelector("#container");
+    squareGridSize = prompt("Try a value between 2 and 100")
+ };
 
 for(let i = 0; i<= squareGridSize; i++){
     const squareRowElement = document.createElement("div");
@@ -22,4 +24,3 @@ for(let i = 0; i<= squareGridSize; i++){
         })
     }
 }
-
