@@ -30,3 +30,7 @@ body{
 .squareElement:hover{
     background-color: lightgray;
 }
+
+.changeColor{
+    background-color: aqua;
+}

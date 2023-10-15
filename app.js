@@ -1,4 +1,4 @@
-let squareGridSize = 26;
+let squareGridSize = 16;
 
 const containerElement = document.querySelector("#container");
 
@@ -9,6 +9,10 @@ for(let i = 0; i<= squareGridSize; i++){
     for(let i = 0; i<= squareGridSize; i++){
         const squareElement = document.createElement("div");
         squareElement.classList.add("squareElement");
-        squareRowElement.appendChild(squareElement);    
+        squareRowElement.appendChild(squareElement);
+        squareElement.addEventListener("mouseover", (event)=>{
+            squareElement.classList.add("changeColor");
+        })
     }
 }
+
