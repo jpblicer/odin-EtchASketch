@@ -1,5 +1,11 @@
-const containerElement = document.querySelector("#container");
-const squareElement = document.createElement("div");
-squareElement.classList.add("squareElement");
+let squareGrideSize = 16;
 
-containerElement.appendChild(squareElement);
+const containerElement = document.querySelector("#container");
+
+
+for(let i = 0; i<= squareGrideSize; i++){
+    const squareElement = document.createElement("div");
+    squareElement.classList.add("squareElement");
+    containerElement.appendChild(squareElement);
+
+}
