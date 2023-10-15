@@ -1,4 +1,4 @@
-let squareGridSize = 16;
+let squareGridSize = 26;
 
 const containerElement = document.querySelector("#container");
 
@@ -12,4 +12,3 @@ for(let i = 0; i<= squareGridSize; i++){
         squareRowElement.appendChild(squareElement);    
     }
 }
-

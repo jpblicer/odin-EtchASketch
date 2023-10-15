@@ -1,22 +1,30 @@
-#container{
+body{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+#container{    
+    width: 960px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
     border: solid;
     border-color: red;
 }
 
 .squareRowElement{
-    display: flex;
+   display: flex;
+   height: 100%;
 }
 
 .squareElement{
     border: solid;
+    border: 1px;
     border-color: black;
-    height: 25px;
-    width: 25px;
+    width: 100%;
+
 }
 
 .squareElement:hover{
