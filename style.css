@@ -18,3 +18,7 @@
     height: 25px;
     width: 25px;
 }
+
+.squareElement:hover{
+    background-color: lightgray;
+}
