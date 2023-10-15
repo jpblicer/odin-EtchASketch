@@ -1,4 +1,11 @@
-let squareGridSize = 16;
+const gridSizeButtonElement = document.querySelector(".gridSizeButton");
+
+let squareGridSize = prompt("please choose a grid size between 2 and 100");
+
+while(squareGridSize > 100 || squareGridSize < 2){
+   squareGridSize = prompt("Try a value between 2 and 100")
+};
+
 
 const containerElement = document.querySelector("#container");
 
